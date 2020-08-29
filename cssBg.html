@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssBg</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: 
+            linear-gradient(-45deg, rgba(90, 208, 255, 0.8), rgba(0, 0, 0, 0.6), rgba(253, 100, 100, 0.8)), 
+            repeating-linear-gradient(60deg, rgba(255, 255, 255, 0.8) 0,rgba(255, 255, 255, 0.8) 50px,rgba(192, 233, 245, 0.7) 50px,rgb(192, 233, 245, 0.7) 100px,transparent 100px,transparent 250px),
+            repeating-linear-gradient(-60deg, rgba(255, 255, 255, 0.7) 0,rgba(255, 255, 255, 0.7) 50px,rgba(255, 255, 255, 0.3) 50px,rgba(255, 255, 255, 0.3) 100px,transparent 100px,transparent 250px),            
+            repeating-linear-gradient(rgba(8, 255, 234, 0.7) 0,rgba(12, 0, 173, 0.8) 150px,transparent 150px,transparent 160px)
+            ;
+            background-size: 200% 200%;
+            width: 100vw;
+            height: 100vh;
+            animation: run 30s ease-in-out infinite;
+        }
+        .text{
+            font-weight: 900;
+            font-size: 15rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-left: 2rem;
+        }
+        p{
+            font-size: 2rem;
+            color: rgb(255, 255, 255);
+            margin-left: 4rem;
+        }
+        @keyframes run{
+            0%{
+                background-position: 0 0;
+            }
+            50%{
+                background-position: 100% 100%;
+            }
+            100%{
+                background-position: 0 0;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="text">RUN</div>
+    <div class="text">WATCH</div>
+    <p>an imaginary creature with magic powers, usually represented as a very small person with wings</p>
+    
+</body>
+</html>
